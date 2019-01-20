@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Как DevOps практики меняют документацию</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="title" data-background="images/docker.png" data-background-size="400px" data-background-opacity="0.2">
+					<h1>Как DevOps практики меняют документацию</h1>
+				</section>
+				<section class="about">
+					<h2>About</h2>
+					<p class="me">Андрей Копылов</p>
+					<ul>
+						<li>В веб-разработке с 2006</li>
+						<li>Технический директор AREALIDEA</li>
+					</ul>
+					<p>aa74ko@gmail.com</p>
+					<aside class="notes" data-markdown>
+					</aside>
+				</section>
+				<section>
+					<h2>Документация для большинства проектов отсутствует</h2>
+					<aside class="notes" data-markdown>
+						Распространение знаний только через личное общение.
+						Большой объем знаний только в одной голове.
+					</aside>
+				</section>
+				<section>
+					<h2>Для крупных проектов</h2>
+					<h2>Документация</h2>
+					<ul>
+						<li>Пользователя</li>
+						<li>Администратора</li>
+						<li>Развертывание на проде и эксплуатация</li>
+						<li>Развертывание для разработчика</li>
+						<li>Архитектурные решения</li>
+					</ul>
+					<aside class="notes" data-markdown>
+						Для крупных проектов есть хорошая документация пользователя и администратора.
+						Есть документация по развертыванию системы. Представляет собой документ формата docx на десяток страниц.
+						
+						И не очень внятная документация разработчика.
+
+						Процесс развертывания очень часто непростой. Подключение нового разработчика в проект дорого.
+					</aside>
+				</section>
+				<section>
+					<h2>Обратный закон Конвея</h2>
+					<aside class="notes" data-markdown>
+						При разработке огромного для нас проекта пришлось внедрять новые подходы к разработке включая и документацию.
+						В этом проекте часть документации была написана ДО старта разработки.
+					</aside>
+				</section>
+				<section>
+					<h2></h2>
+					<aside class="notes" data-markdown>
+					</aside>
+				</section>
+				<section>
+					<h2></h2>
+					<aside class="notes" data-markdown>
+					</aside>
+				</section>
+				<section>
+					<h2></h2>
+					<aside class="notes" data-markdown>
+					</aside>
+				</section>
+				<section>
+					<h2></h2>
+					<aside class="notes" data-markdown>
+					</aside>
+				</section>
+				<section>
+					<h2></h2>
+					<aside class="notes" data-markdown>
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.1,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+				]
+			});
+			// Reveal.configure({ slideNumber: true });
+		</script>
+	</body>
+</html>
